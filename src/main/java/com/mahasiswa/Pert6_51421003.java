@@ -24,9 +24,9 @@ public class Pert6_51421003 implements ApplicationRunner {
         // Menjalankan aplikasi Spring Boot
         ApplicationContext context = SpringApplication.run(Pert6_51421003.class, args);
 
-//        MahasiswaController controller = context.getBean(MahasiswaController.class);
-//        MahasiswaView mahasiswaView = new MahasiswaView(controller);
-//        mahasiswaView.setVisible(true);
+       MahasiswaController controller = context.getBean(MahasiswaController.class);
+       MahasiswaView mahasiswaView = new MahasiswaView(controller);
+       mahasiswaView.setVisible(true);
     }
 
     @Override
